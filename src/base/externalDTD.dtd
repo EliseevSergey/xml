@@ -1,0 +1,4 @@
+<!ELEMENT contacts (contact*)>
+<!ELEMENT contact (name, email)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--EXTERNAL DTD-->
+<!DOCTYPE contacts SYSTEM "externalDTD.dtd">
+
+<contacts>
+    <contact>
+        <name> Sergey</name>
+        <email> s.eliseev1@gmail.com</email>
+    </contact>
+</contacts>
