@@ -48,6 +48,7 @@
             <xsd:enumeration value="EN" />
             <xsd:enumeration value="FR" />
             <xsd:enumeration value="DE" />
+            <xsd:enumeration value="JP" />
         </xsd:restriction>
     </xsd:simpleType>
 </xsd:schema>

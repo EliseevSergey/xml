@@ -8,7 +8,7 @@
     <email>s.eliseev1@gmail.com</email>
     <age>34</age>
     <birthDay>31</birthDay>
-    <languages></languages>
+    <languages>RU JP EN</languages>
   </contact>
 
   <contact>
@@ -16,6 +16,7 @@
     <email>v.eliseev@gmail.com</email>
     <age>19</age>
     <birthDay>23</birthDay>
+    <languages> EN RU JP </languages>
   </contact>
 
   <contact>
@@ -23,6 +24,7 @@
     <email>m.eliseeva1@gmail.com</email>
     <age>23</age>
     <birthDay>10</birthDay>
+    <languages> EN RU FR </languages>
   </contact>
   <dayOfCreation>1</dayOfCreation>
 </contacts>
