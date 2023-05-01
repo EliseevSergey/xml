@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is comment -->
+<contacts xmlns="http://www.un.com/ns/1">
+    <contact>
+        <name>
+            <first>Jimmy</first>
+            <last>Chin</last>
+        </name>
+        <phone type="mobile">+8789878797</phone>
+        <email>jimmyChin@mail.ru</email>
+    </contact>
+    <contact>
+        <name>
+            <first>Jeck</first>
+            <last>Balander</last>
+        </name>
+        <phone type="home">+879789893</phone>
+        <email>balander@gmail.com</email>
+    </contact>
+</contacts>
