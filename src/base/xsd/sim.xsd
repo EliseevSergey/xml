@@ -10,6 +10,7 @@
             <xsd:sequence>
                 <xsd:element name="contact" type="contactType"
                              maxOccurs='unbounded' />
+                <xsd:element name="dayOfCreation" type="dayOfMonth" />
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -18,6 +19,35 @@
         <xsd:sequence>
             <xsd:element name="firstName" type="xsd:string" />
             <xsd:element name="email" type="xsd:string" />
+            <xsd:element name="age">
+                <xsd:simpleType>
+                <xsd:restriction base="xsd:integer">
+                    <xsd:minInclusive value="0" />
+                    <xsd:maxInclusive value="99" />
+                </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="birthDay" type="dayOfMonth" />
+            <xsd:element name="languages" type="langList" />
         </xsd:sequence>
     </xsd:complexType>
+    <xsd:simpleType name="dayOfMonth">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="1"/>
+            <xsd:maxExclusive value="32"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="langList">
+        <xsd:list itemType="langType"/>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="langType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="RU" />
+            <xsd:enumeration value="EN" />
+            <xsd:enumeration value="FR" />
+            <xsd:enumeration value="DE" />
+        </xsd:restriction>
+    </xsd:simpleType>
 </xsd:schema>

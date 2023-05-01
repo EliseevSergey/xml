@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contacts
+   xmlns="http://www.simple.com"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.simple.com sim.xsd" >
+  <contact>
+    <firstName>Sergey</firstName>
+    <email>s.eliseev1@gmail.com</email>
+    <age>34</age>
+    <birthDay>31</birthDay>
+    <languages></languages>
+  </contact>
+
+  <contact>
+    <firstName>Vasya</firstName>
+    <email>v.eliseev@gmail.com</email>
+    <age>19</age>
+    <birthDay>23</birthDay>
+  </contact>
+
+  <contact>
+    <firstName>Masha</firstName>
+    <email>m.eliseeva1@gmail.com</email>
+    <age>23</age>
+    <birthDay>10</birthDay>
+  </contact>
+  <dayOfCreation>1</dayOfCreation>
+</contacts>
