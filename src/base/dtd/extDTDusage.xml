@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--EXTERNAL DTD-->
-<!DOCTYPE contacts SYSTEM "externalDTD.dtd">
+<!DOCTYPE contacts SYSTEM "/Users/admin/IdeaProjects/xml/src/base/dtd/externalDTD.dtd">
 
 <contacts>
     <contact>

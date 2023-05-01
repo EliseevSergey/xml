@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.simple.com"
+    xmlns="http://www.simple.com"
+    elementFormDefault = "qualified">
+
+    <xsd:element name="contacts">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="contact" type="contactType"
+                             maxOccurs='unbounded' />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="contactType">
+        <xsd:sequence>
+            <xsd:element name="firstName" type="xsd:string" />
+            <xsd:element name="email" type="xsd:string" />
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
