@@ -9,6 +9,7 @@
     <age>34</age>
     <birthDay>31</birthDay>
     <languages>RU JP EN</languages>
+    <image source="photo/1.jpg" />
   </contact>
 
   <contact>
@@ -17,6 +18,7 @@
     <age>19</age>
     <birthDay>23</birthDay>
     <languages> EN RU JP </languages>
+    <image source="photo/2.jpg" />
   </contact>
 
   <contact>
@@ -25,6 +27,7 @@
     <age>23</age>
     <birthDay>10</birthDay>
     <languages> EN RU FR </languages>
+    <image source="photo/3.jpg" />
   </contact>
   <dayOfCreation>1</dayOfCreation>
 </contacts>

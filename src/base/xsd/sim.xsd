@@ -29,6 +29,7 @@
             </xsd:element>
             <xsd:element name="birthDay" type="dayOfMonth" />
             <xsd:element name="languages" type="langList" />
+            <xsd:element name="image" type="imageType" />
         </xsd:sequence>
     </xsd:complexType>
     <xsd:simpleType name="dayOfMonth">
@@ -51,4 +52,9 @@
             <xsd:enumeration value="JP" />
         </xsd:restriction>
     </xsd:simpleType>
+
+    <xsd:complexType name="imageType">
+        <xsd:attribute name="source" type="xsd:anyURI"/>
+    </xsd:complexType>
+
 </xsd:schema>
