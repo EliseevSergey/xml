@@ -6,7 +6,8 @@
                 <append name="source_url" value="${url}">
                     <each-xpath-node path="//DIV[@class='item__address item__address--allday']"> <!-- 80 штук -->
                         <multiple-xpath target="NODE">
-                            <attribute name="sp_address" path="/text()"/>
+                            <attribute name="sp_address" path="/text()"/> <!-- Извлекаем адрес -->
+                            <attribute name="lat, lon" path="/../@data-coord"/> <!-- Извлекаем координаты -->
                         </multiple-xpath>
                     </each-xpath-node>
                 </append>
