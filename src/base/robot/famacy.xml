@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extractor xmlns="../sprobot.xsd" thread-count="20" use-unique-entity-check="true">
+    <append name="sp_company_name" value="Fialka">
+        <append name="sp_url" value="https://fialkaspb.ru/">
+            <innermost-load url="https://fialkaspb.ru/pharmacy/">
+                <append name="source_url" value="${url}">
+                    <each-xpath-node path="//DIV[@class='item__address item__address--allday']"> <!-- 80 штук -->
+                        <multiple-xpath target="NODE">
+                            <attribute name="sp_address" path="/text()"/>
+                        </multiple-xpath>
+                    </each-xpath-node>
+                </append>
+            </innermost-load>
+        </append>
+    </append>
+</extractor>
