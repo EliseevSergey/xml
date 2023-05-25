@@ -8,6 +8,7 @@
                         <multiple-xpath target="NODE">
                             <attribute name="sp_address" path="/text()"/> <!-- Извлекаем адрес -->
                             <attribute name="lat, lon" path="/../@data-coord"/> <!-- Извлекаем координаты -->
+                            <entity source-url="${url}"/>
                         </multiple-xpath>
                     </each-xpath-node>
                 </append>
