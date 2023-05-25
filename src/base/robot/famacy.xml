@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <extractor xmlns="../sprobot.xsd" thread-count="20" use-unique-entity-check="true">
-    <append name="sp_company_name" value="Fialka">
+    <append name="sp_company_name" value="Fialka"> <!-- sp_company_name название компании -->
         <append name="sp_url" value="https://fialkaspb.ru/">
             <innermost-load url="https://fialkaspb.ru/pharmacy/">
                 <append name="source_url" value="${url}">
                     <each-xpath-node path="//DIV[@class='item__address item__address--allday']"> <!-- 80 штук -->
                         <multiple-xpath target="NODE">
-                            <attribute name="sp_address" path="/text()"/> <!-- Извлекаем адрес -->
+                            <attribute name="sp_address" path="/text()"/> <!-- Извлекаем адрес sp_address -->
+                            <innermost-load url="https://fialkaspb.ru/GOGO/">
+                            <!-- Извлекаем телефон sp_phone-->
                             <attribute name="lat, lon" path="/../@data-coord"/> <!-- Извлекаем координаты -->
                             <entity source-url="${url}"/>
                         </multiple-xpath>
